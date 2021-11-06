@@ -1,0 +1,158 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni
+s pribyvajici sirkou pridavame media query pro
+středně široké obrazovky:
+@media (min-width: 480px) {
+}
+široké obrazovky
+@media (min-width: 860px) {
+}
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paticka {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+.paticka a {
+    color: silver;
+}
+
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+/* ------------------------------- */
+
+.kontejner {
+    width: 414px;
+}
+
+.nazev_1,
+.nazev {
+    font-family: 'Raleway';
+     font-weight: 800;
+     color: white;
+}
+
+.nazev_1 {
+  font-size: 1.2rem;
+}
+
+.nazev {
+    font-size: 1.2rem;
+  }
+  
+.rubrika_1,
+.koment_1 {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.rubrika,
+.koment {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.recept_1{
+    background-image: url("images/salat.jpg");
+    background-repeat: no-repeat;
+    background-size: 414px;
+   height: 366px;
+   width: 414px;;
+}
+
+.recept_2,
+.recept_3,
+.recept_4,
+.recept_5 {
+    background-repeat: no-repeat;
+    background-size: 414px;
+    height: 259px;
+    width: 414px;
+   
+}
+
+.recept_2  {
+    background-image: url("images/chlebicek.jpg");
+}
+
+.recept_3 {
+    background-image: url("images/cizrna.jpg");
+}
+
+.recept_4 {
+    background-image: url("images/tacos.jpg");
+}
+
+.recept_5 {
+    background-image: url("images/burger.jpg");
+}
+
+.nazev_1 {
+    order: 3;
+    height: 0.5rem;
+    width:18rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.koment_1,
+.rubrika_1 {
+    order: 2;
+    height: 17rem;
+    width: 12.7rem;
+    padding: 0.5rem;
+}
+.nazev {
+    order: 3;
+    height: 1rem;
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+.koment,
+.rubrika {
+    order: 2;
+    height: 11rem;
+    width: 12.8rem;
+    padding: 0.5rem;
+}
+
+.koment_1,
+.koment {
+       text-align: right;
+}
+
+ .recept_1,
+ .recept_2,
+ .recept_3,
+ .recept_4,
+ .recept_5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
